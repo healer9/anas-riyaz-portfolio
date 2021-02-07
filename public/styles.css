@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #272822;
+    color: #A6E22E;
+    padding: 0 5%;
+    font-family: 'Robot', sans-serif;
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+}
+
+header {
+    display: grid;
+    grid-template-areas: "logo nav";
+    align-items: center;
+    padding: 1% 0;
+}
+
+.Logo {
+    width: 85px;
+    height: 70px;
+}
+
+.sname {
+    color: #FFFFFF;
+}
+
+.listStyle {
+    color: #A6E22E;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.listStyle:hover {
+    color: #FFFFFF;
+    transition: 0.2s ease-in;
+}
+
+.Nav {
+    display: grid;
+    grid-area: nav;
+    grid-template-columns: repeat(5, auto);
+    align-items: center;
+    justify-items: center;
+}
+
+.Nav a:hover {
+    transform: scale(1.1);
+}
+
+.burger {
+    height: 35px;
+    align-items: center;
+    right: 5%;
+    justify-self: end;
+    display: none;
+}
+
+.line-1,
+.line-3 {
+    background-color: #A6E22E;
+    width: 35px;
+    height: 4px;
+    border-radius: 10px;
+}
+
+.line-2 {
+    background-color: #FFFFFF;
+    width: 25px;
+    height: 4px;
+    border-radius: 10px;
+}
+
+@media (max-width:1250px) {
+    header {
+        grid-template-areas: "logo burger""nav nav";
+    }
+
+    .Logo {
+        height: 50px;
+        width: 60px;
+    }
+
+    .Nav {
+        grid-template-rows: repeat(5, auto);
+        grid-template-columns: none;
+        grid-row-gap: 20px;
+        padding: 30px 0 30px;
+        background-color: rgba(255, 255, 255, .15);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        /* border-bottom-right-radius: 10px; */
+        position: absolute;
+        top: 65px;
+        z-index: 2000;
+        width: 90%;
+        height: 88vh;
+    }
+
+    .burger {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        cursor: pointer;
+    }
+}
+
+.NavAnimation-enter {
+    opacity: 0;
+    transform: scale(0.5);
+    z-index: 2000;
+}
+
+.NavAnimation-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 350ms, transform 350ms;
+    z-index: 2000;
+}
+
+.NavAnimation-exit {
+    opacity: 1;
+}
+
+.NavAnimation-exit-active {
+    opacity: 0;
+    transform: scale(0.5);
+    transition: opacity 350ms, transform 350ms;
+}

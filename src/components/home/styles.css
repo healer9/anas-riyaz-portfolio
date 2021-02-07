@@ -1,0 +1,75 @@
+main {
+    position: absolute;
+    top: 25%;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.my-name {
+    font-size: 4rem;
+}
+
+.vector {
+    width: 85%;
+}
+
+.greeting {
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.job {
+    margin-top: 1%;
+}
+
+footer {
+    position: fixed;
+    color: #FFFFFF;
+    bottom: 0;
+    width: 20%;
+    padding: 2% 0;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa:hover {
+    color: #A6E22E;
+    cursor: pointer;
+    transition: color 0.5s ease-in;
+}
+
+@media (max-width: 1024px) {
+    main {
+        top: 45%;
+    }
+
+    .my-name {
+        font-size: 2rem;
+    }
+
+    footer {
+        width: 50%;
+    }
+}
+
+@media (max-width:760px) {
+    .vector {
+        display: none;
+    }
+
+    .my-name {
+        font-size: 3rem;
+    }
+
+    main {
+        top: 40%;
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        width: 80%;
+        padding: 5% 0;
+    }
+}
