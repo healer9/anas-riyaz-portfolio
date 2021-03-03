@@ -44,6 +44,7 @@ const Header = () => {
                                 onClick={() => setNavVisibility(!isNavVisible)}
                                 className="listStyle"
                                 to={navLink === 'home' ? '/' : '/' + navLink}
+                                exact
                                 activeStyle={{ 'color': '#FFFFFF' }}
                             >
                                 {navLink.toUpperCase()}

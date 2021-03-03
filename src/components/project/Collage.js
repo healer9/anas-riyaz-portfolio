@@ -32,9 +32,9 @@ const Collage = () => {
             </div>
             <div className="project-btn-container">
                 <button onClick={decrement}
-                    className="project-btn">&#8592; Next</button>
+                    className="project-btn">&#8592; Prev</button>
                 <button onClick={increment}
-                    className="project-btn">Prev &#8594;</button>
+                    className="project-btn">Next &#8594;</button>
             </div>
         </>
     )
