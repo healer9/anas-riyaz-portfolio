@@ -30,11 +30,11 @@ Live at: [Anas Riyaz](https://healer9.github.io/anas-riyaz-portfolio/#/)
 
 > Home Page
 
-<img src="snapshots/mobilehome.png">
+<img src="snapshots/mobilehome.png" width="160px" height="300px">
 
 > Conatct Page
 
-<img src="snapshots/contactpage.png">
+<img src="snapshots/contactpage.png" width="160px" height="300px">
 
 ---
 
