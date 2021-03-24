@@ -1,0 +1,103 @@
+.about {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3%;
+}
+
+.anas-container {
+    padding: 0.5%;
+    border: 1px solid #A6E22E;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.anas {
+    height: 450px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.bio-container {
+    width: 60%;
+    padding: 3%;
+}
+
+.bio {
+    font-size: 1.3rem;
+    line-height: 1.4;
+}
+
+.interset {
+    font-size: 1.5rem;
+    display: inline-block;
+    margin: 2% 0;
+    border-bottom: 2px solid #A6E22E;
+}
+
+.interset-list li {
+    padding: 2px 0;
+    font-size: 1.1rem;
+}
+
+.resume {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    border: 1px solid #A6E22E;
+    border-radius: 5px;
+    background: none;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    margin-top: 2%;
+}
+
+.resume:hover {
+    cursor: pointer;
+    background: #A6E22E;
+    color: #272822;
+    transition: 0.3s ease-in;
+}
+
+button:focus {
+    outline: none;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-icon {
+    width: 100px;
+    height: 100px;
+}
+
+@media (max-width:768px) {
+    .about {
+        flex-direction: column;
+    }
+
+    .anas-container {
+        width: 252px;
+        height: 372px;
+        padding: 5px;
+    }
+
+    .anas {
+        width: 240px;
+        height: 360px;
+    }
+
+    .bio {
+        font-size: 1rem;
+    }
+
+    .bio-container {
+        margin-top: 5%;
+        width: 100%;
+    }
+
+    .resume {
+        margin: 10% 0;
+    }
+}
